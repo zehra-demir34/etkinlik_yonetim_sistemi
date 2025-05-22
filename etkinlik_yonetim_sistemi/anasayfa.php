@@ -5,7 +5,7 @@
 
 
 function gunlukGenelHavaDurumu($tarih) {
-    $apiKey = "939637607f535ba1c74ee9d5e59c0b51";
+    $apiKey = "";// kendi api keyinizi girin
     $url = "https://api.openweathermap.org/data/2.5/forecast?q=Erzurum,tr&units=metric&lang=tr&appid={$apiKey}";
 
     $ch = curl_init($url);
