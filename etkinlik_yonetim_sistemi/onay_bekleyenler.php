@@ -4,7 +4,7 @@ include("baglanti.php");
 
 // Giriş kontrolü (admin girişi yapılmamışsa çıkışa yönlendir)
 if (!isset($_SESSION["giris"]) || $_SESSION["giris"] != sha1(md5("var"))) {
-    echo "<script>alert('Yetkisiz erişim!'); window.location.href='yonet-index.php';</script>";
+    echo "<script>alert('Yetkisiz erişim!'); window.location.href='login.php';</script>";
     exit;
 }
 
