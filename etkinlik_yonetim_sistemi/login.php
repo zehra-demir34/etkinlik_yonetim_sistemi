@@ -85,7 +85,7 @@ session_start();
             echo "<script> window.location.href='yonet-anasayfa.php'; </script>";
         } else {
             echo "<script>
-            alert('HATALI KULLANICI BİLGİSİ!'); window.location.href='yonet-index.php';
+            alert('HATALI KULLANICI BİLGİSİ!'); window.location.href='login.php';
             </script>";
         }
     }
