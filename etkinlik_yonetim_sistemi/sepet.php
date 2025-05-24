@@ -132,13 +132,7 @@ if (isset($_GET['sil'])) {
       <button onclick="kullaniciMailGoster();"><i class="fa-solid fa-circle-user"></i></button>
       <p id="kullaniciMailYazisi" style="display:none; color:blue;"></p>
 
-      <script>
-        function kullaniciMailGoster() {
-          const paragraf = document.getElementById("kullaniciMailYazisi");
-          paragraf.textContent = "Giriş yapan kullanıcı maili: " + kullaniciMail;
-          paragraf.style.display = "block";
-        }
-      </script>
+    
 
       <button onclick="window.location.href='cikis.php';">
         <i class="fa-solid fa-right-to-bracket"></i>
@@ -264,11 +258,6 @@ if (isset($_GET['sil'])) {
   </div>
 
 
-  <script>
-  function kullaniciMailGoster() {
-    alert("Giriş yapan kullanıcı maili: " + kullaniciMail);
-  }
-</script>
 
 <script>
   document.getElementById("odemeBtn").addEventListener("click", function() {
