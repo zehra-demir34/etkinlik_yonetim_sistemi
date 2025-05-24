@@ -26,7 +26,7 @@
 <body style="text-align:center;">
 
     <div style="text-align:center;">
-        <a href="anasayfa.php">ANA SAYFA</a> - <a href="yonet-etkinlik.php">ETKİNLİKLER</a> -<a href="onay_bekleyenler.php">KULLANICI ONAY</a>- <a href="duyurular.php">DUYURULAR</a>  - <a href="cikis.php" onclick="if (!confirm('Çıkış Yapmak İstediğinize Emin misiniz?')) return false;">ÇIKIŞ</a>
+        <a href="yonet-anasayfa.php">ANA SAYFA</a> - <a href="yonet-etkinlik.php">ETKİNLİKLER</a> -<a href="onay_bekleyenler.php">KULLANICI ONAY</a>- <a href="duyurular.php">DUYURULAR</a>  - <a href="cikis.php" onclick="if (!confirm('Çıkış Yapmak İstediğinize Emin misiniz?')) return false;">ÇIKIŞ</a>
         <br><hr><br><br>
     </div>
 
