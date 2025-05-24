@@ -83,13 +83,7 @@ function gunlukGenelHavaDurumu($tarih) {
       <button onclick="kullaniciMailGoster();"><i class="fa-solid fa-circle-user"></i></button>
       <p id="kullaniciMailYazisi" style="display:none; color:blue;"></p>
 
-      <script>
-        function kullaniciMailGoster() {
-          const paragraf = document.getElementById("kullaniciMailYazisi");
-          paragraf.textContent = "Giriş yapan kullanıcı maili: " + kullaniciMail;
-          paragraf.style.display = "block";
-        }
-      </script>
+ 
 
       
       <button onclick="window.location.href='cikis.php';">
@@ -181,11 +175,7 @@ function gunlukGenelHavaDurumu($tarih) {
     </div>
   </section>
 
-<script>
-  function kullaniciMailGoster() {
-    alert("Giriş yapan kullanıcı maili: " + kullaniciMail);
-  }
-</script>
+
 
 
 </body>
