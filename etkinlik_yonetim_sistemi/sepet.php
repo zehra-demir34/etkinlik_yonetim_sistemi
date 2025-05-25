@@ -49,19 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sepete_ekle'])) {
 
     
 
-    // Aynı etkinlik sepette varsa adeti artır
-    $varmi = mysqli_query($baglanti, "SELECT * FROM sepet WHERE kullanici_id=$kullanici_id AND etkinlik_id=$id");
-    
-    if (mysqli_num_rows($varmi) > 0) {
-        mysqli_query($baglanti, "UPDATE sepet SET adet = adet + $adet WHERE kullanici_id=$kullanici_id AND etkinlik_id=$id");
-    } else {
-        mysqli_query($baglanti, "INSERT INTO sepet(kullanici_id, etkinlik_id, etkinlik_adi, fiyat, adet) 
-                                 VALUES ($kullanici_id, $id, '$ad', $fiyat, $adet)");
-    }
 
-    header("Location: sepet.php");
-    exit;
-}
 
 
 // Sepetten çıkarma işlemi ve kontenjan geri artırma
@@ -140,8 +128,7 @@ if (isset($_GET['sil'])) {
     </div>
   </header>
 
-</head>
-<body>
+
 
     
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -190,8 +177,7 @@ if (isset($_GET['sil'])) {
       </div>
     </div>
 
-    <!-- Bootstrap ve JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
       function showPaymentModal() {
         const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
@@ -265,6 +251,7 @@ if (isset($_GET['sil'])) {
   });
 </script>
 
-
+<!-- Bootstrap ve JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
